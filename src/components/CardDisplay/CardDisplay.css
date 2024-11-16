@@ -1,0 +1,35 @@
+/* CardDisplay.css */
+
+.card-display-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next row */
+    gap: 16px; /* Even spacing between cards */
+    padding: 16px; /* Padding inside the container */
+    justify-content: center; /* Center-align cards */
+    background-color: #f9f9f9; /* Light background for the container */
+    border-radius: 8px; /* Slightly rounded corners for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow around the container */
+  }
+  
+  .card-container {
+    flex: 0 1 calc(33.333% - 16px); /* 3 cards per row with spacing accounted */
+    max-width: 300px; /* Ensure consistent card width */
+    margin: 0 0; /* Center align each card */
+  }
+  
+  @media (max-width: 768px) {
+    .card-container {
+      flex: 0 1 calc(50% - 16px); /* 2 cards per row for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card-container {
+      flex: 0 1 calc(100% - 16px); /* 1 card per row for mobile screens */
+    }
+  }
+
+  .countName{
+    margin-left: 7px;
+  }
+  

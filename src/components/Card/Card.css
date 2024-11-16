@@ -1,0 +1,82 @@
+/* Card.css */
+
+.card {
+  width:  90%; /* Adjust as needed */
+  height: 130px;
+  margin: 16px; /* Even margin around each card */
+  margin-left: 0px;
+  padding: 16px; /* Even padding inside the card */
+  border: 1px solid #ccc; /* Subtle border for card outline */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #fff; /* White background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px; /* Spacing between header and title */
+  height: 20%;
+}
+
+.card-id {
+  font-size: 14px;
+  color: #888; /* Subtle text color for ID */
+}
+
+.card-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Circular avatar */
+  object-fit: cover; /* Ensure the image fits well */
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333; /* Dark text for title */
+  margin: 0 0 12px; /* Space below the title */
+
+  display: -webkit-box; /* Establishes a flexbox-like container for the text */
+  -webkit-line-clamp: 2; /* Limits the text to 2 lines */
+  -webkit-box-orient: vertical; /* Defines the box orientation as vertical */
+  overflow: hidden; /* Hides any overflowed text */
+  text-overflow: ellipsis; /* Adds the "..." when the text overflows */
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20%;
+}
+
+.card-status {
+  display: flex;
+  align-items: center;
+}
+
+.status-icon {
+  width: 12px;
+  height: 12px;
+  margin-right: 8px; /* Space between icon and label */
+  background-color: #4caf50; /* Default color for active status */
+  border-radius: 50%; /* Circular status indicator */
+}
+
+.status-label {
+  font-size: 14px;
+  color: #555; /* Neutral text color for tag */
+}
+
+.card-title-container{
+  height: 50%;
+  overflow: hidden; 
+}
